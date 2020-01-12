@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>신비한 양념사전</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/myhome.ico" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap" rel="stylesheet">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.showpanel').click(function() {
+					showpanel();
+				});
+
+				$('.topicon1').click(function() {
+
+				});
+			});
+
+			function showpanel() {
+
+				$('#panel').animate({
+					left : 0
+				}, 500);
+				$('#contentall').click(function() {
+					$('#panel').animate({
+						left : -1000
+					}, 500);
+				});
+				$('#panel').css({
+
+				});
+
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id="panel">
+			<img src="images/panel_logo.png" class="panel_lg">
+			<h4>신비한 양념의 세계로 떠나보세요!</h4>
+			<div class="kakao">카카오로 시작</div>
+			<div class="facebook">페이스북으로 시작</div>
+			<div class="login">
+			<p>이메일로 로그인</p>
+			<p>회원가입</p>
+			</div>
+		</div>
+		<!--헤더 시작-->
+		<div id="header" data-role="header" >
+
+			<img id="headerlogo" src="images/logo_ko.png"/>
+			<img src="images/lines.png" class="showpanel"/>
+
+			<div id="icons">
+
+		
+<a href="main.html"  rel="external" data-transition="slide"><img src="images/homeicon.png" class="topicon1"/></a>
+			</div>
+
+		</div>
+		<!--헤더 끝-->
+
+	</body>

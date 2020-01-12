@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>신비한 양념사전</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/myhome.ico" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#sp_img > img {
+
+				position: absolute;
+				max-width: 100%;
+				max-height: 100%;
+				width: auto;
+				height: auto;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			#button {
+				width: 20px;
+				height: 20px;
+			}
+		</style>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+
+				$('#sp_img>img').fadeOut(1000);
+				$('#sp_img>img').fadeIn(3000);
+
+				setTimeout(function() {
+					$('#button').trigger("click");
+				}, 4000);
+			});
+
+		</script>
+	</head>
+	<body>
+		<div data-role="page" style="background:#ffffff; ">
+			<div id="splash" data-role="content">
+				<div id="sp_img">
+					<img src=images/logo.png alt="" />
+				</div>
+				<a href="main.html"  rel="external"><div id="button"></div></a>
+			</div>
+		</div>
+	</body>
+</html>
